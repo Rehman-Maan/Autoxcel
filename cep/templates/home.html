@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<style>
+  body {
+    background-color: grey;
+</style>
+<div class="container-fluid border border-dark border-3 my-4 px-0">
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="static/Caraousel/caru1 (1).jpeg" class="d-block w-100" style="width:30px; height: 550px;">
+        <div style="
+            background: black;
+            border-radius: 11px;
+        " class="carousel-caption d-none d-md-block">
+          <h3>Experience</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="static/Caraousel/caru1 (3).jpeg" class="d-block w-100" style="width: 30px; height: 550px;">
+        <div style="
+            background: black;
+            border-radius: 11px; " class="carousel-caption d-none d-md-block">
+          <h3>On The AutoXcel</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+            <img src="static/Caraousel/caru1 (2).jpeg" class="d-block w-100" style="width: 30px; height: 550px;">
+            <div style="
+            background: black;
+            border-radius: 11px;
+        " class="carousel-caption d-none d-md-block">
+              <h3>The Best</h3>
+            </div>
+          </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!-- reviews -->
+
+<div class="my-5">
+  <div class="reviews-heading">
+    <h1 id="reviews">Reviews</h1>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 my-4">
+
+      <div class="card border border-dark border-2 rounded-2" style="width: 18rem; background-color: lightgray;">
+        <img src="https://source.unsplash.com/500x400/?man" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jack</h5>
+          <p class="card-text">"AutoXcel exceeded my expectations with their exceptional vehicles, cutting-edge technology, and personalized service. Driving an AutoXcel is a thrilling experience!"</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 my-4">
+      <div class="card border border-dark border-2 rounded-2" style="width: 18rem; background-color: lightgray;">
+        <img src="https://source.unsplash.com/500x400/?woman" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Emily</h5>
+          <p class="card-text">"I was impressed by AutoXcel's commitment to sustainability and eco-friendly practices. Their vehicles combine style, performance, and a greener future."</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 my-4">
+      <div class="card border border-dark border-2 rounded-2" style="width: 18rem; background-color: lightgray;">
+        <img src="https://source.unsplash.com/500x400/?teen" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Roger</h5>
+          <p class="card-text">"AutoXcel sets the standard for automotive excellence. Their innovative engineering, unmatched customer service, and attention to detail make them a top choice for car enthusiasts." </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+{% endblock body %}

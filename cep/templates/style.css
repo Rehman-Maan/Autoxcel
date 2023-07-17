@@ -1,0 +1,39 @@
+.reviews-heading {
+    background-color: #fffefe;
+    padding: 20px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+.navbar-buttons {
+    margin-left: auto;
+  }
+  
+.btn-custom {
+    background-color: #ff0000;
+    color: gray;
+    margin-left: 10px;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content {
+    min-height: calc(100% - 50px); /* Subtract the footer height from the full height */
+  }
+  
+  .footer {
+    height: 50px; /* Set the height of the footer */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  

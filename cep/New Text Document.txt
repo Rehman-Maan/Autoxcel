@@ -1,0 +1,21 @@
+sab se pehle request projeact k urls.py main aayegi or phir usko wahan  se app k urls.py main bheja jayega jahan 
+se wo views.py k kisi function ko active kr k chale gi.
+
+i) app k urls main pehle views import karen ge app se or phir likhen ge 
+"path('/path', views.[func], name=[path name]"
+
+ii) functions jo hain wo hamen views main banane hain.
+
+iii) jo bhi model bane ga s ko admin.py main ja k register karen ge as:
+
+		from [app_name].dels import [Table Name]
+
+		admin.site.register([Table Name])
+
+iv) same goes for app, q k hame app bhi register karni hai or wo aise k hum app.py main se apni app ka naam copy 
+    karen ge or settings.py main jaa k moINSTALLED_APPS ki list main likh den ge k
+	
+				"[app_name].apps.HomeConfig"
+
+v) app or model ko register karne k baad hum terminal pe jaa k makemigrations kar den ge or us k baad hum migrate
+   kar den ge

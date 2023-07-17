@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<head>
+  <title>Welcome Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body{background-color: grey;
+
+    .custom-bg {
+      background-color: lightgrey;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 24px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<div class="container">
+  <h1 class="custom-bg">Welcome! You can buy or rent any car of your out of following</h1>
+</div>
+
+{% comment %} vehicle cards {% endcomment %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4" style="width: 18rem;">
+        <img src="static\Vehicles\Vehicle5.jpeg" class="card-img-top" alt="Vehicle1.jpeg" style="width: 285px; height: 285px;">
+        <div class="card-body">
+          <h5 class="card-title">Thar</h5>
+          <p class="card-text">Experience rugged adventure with the Thar Jeep. Built for off-road enthusiasts, this iconic vehicle offers unmatched durability, powerful performance, and a classic design. Explore the outdoors like never before.</p>
+          <div class="d-flex justify-content-center">
+            <a href="form" class="btn btn-dark">Select</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4" style="width: 18rem;">
+        <img src="static\Vehicles\Vehicle7.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Land Cruiser</h5>
+          <p class="card-text">Unleash luxury and power with the Land Cruiser. Engineered for superior performance, this iconic SUV offers unparalleled comfort, advanced technology, and remarkable off-road capabilities. Elevate your driving experience to new heights.</p>
+          <div class="d-flex justify-content-center">
+            <a href="form" class="btn btn-dark">Select</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4" style="width: 18rem;">
+        <img src="static\Vehicles\Vehicle3.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mahindra</h5>
+          <p class="card-text">Discover the Mahindra Jeep, a reliable and versatile vehicle designed for all terrains. With its powerful engine, spacious interior, and stylish design, it's your perfect companion for both city streets and off-road adventures.</p>
+          <div class="d-flex justify-content-center">
+            <a href="form" class="btn btn-dark">Select</a>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4" style="width: 18rem;">
+        <img src="static\Vehicles\Vehicle4.jpeg" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title">Civic</h5>
+          <p class="card-text">Drive in style and exhilaration with the Civic. This sporty sedan combines sleek design, advanced technology, and impressive performance, making it the perfect choice for those seeking a thrilling driving experience.</p>
+          <div class="d-flex justify-content-center">
+            <a href="form" class="btn btn-dark">Select</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4" pstyle="width: 18rem;">
+        <img src="static\Vehicles\Vehicle1.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Corolla</h5>
+          <p class="card-text">Experience the perfect balance of style and reliability with the Corolla. Designed for efficiency and comfort, this iconic sedan offers advanced features, exceptional fuel economy, and a smooth driving experience.</p>
+          <div class="d-flex justify-content-center">
+            <a href="form" class="btn btn-dark">Select</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4" style="width: 18rem;">
+        <img src="static\Vehicles\Vehicle6.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fortuner</h5>
+          <p class="card-text">Conquer any terrain with the Fortuner. This rugged SUV offers a blend of power and elegance, boasting spacious interiors, cutting-edge features, and formidable off-road capabilities. Elevate your adventures to new heights.</p>
+          <div class="d-flex justify-content-center">
+            <a href="form" class="btn btn-dark">Select</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  
+
+</div>
+
+
+{% endblock body %}

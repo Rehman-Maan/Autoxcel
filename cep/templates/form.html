@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container my-5">
+
+    <form method="post" action="/form" class="row g-3">
+        {% csrf_token %}
+        <div class="col-md-6" ;">
+            <label for="custid" class="form-label" style="font-weight: 700; font-size: medium;">Customer Id</label>
+            <input type="number" class="form-control" id="custid" name="custid"
+                placeholder="Enter your ID by incrementing 1">
+        </div>
+        <div class="col-md-6">
+            <label for="custname" class="form-label" style="font-weight: 700; font-size: medium;">Name</label>
+            <input type="text" class="form-control" id="custname" name="custname" placeholder="Enter your name">
+        </div>
+        <div class="col-md-6">
+            <label for="custemail" class="form-label" style="font-weight: 700; font-size: medium;">Email</label>
+            <input type="email" class="form-control" id="custemail" name="custemail" placeholder="Enter your email">
+        </div>
+        <div class="col-md-6">
+            <label for="custcontact" class="form-label" style="font-weight: 700; font-size: medium;">Contact
+                No</label>
+            <input type="number" class="form-control" id="custcontact" name="custcontact" placeholder="Enter your Contact No">
+        </div>
+        <div class="col-12">
+            <label for="custhouse" class="form-label" style="font-weight: 700; font-size: medium;">Address</label>
+            <input type="text" class="form-control" id="custhouse" name="custhouse" placeholder="Mention your address">
+        </div>
+        <div class="col-md-6">
+            <label for="custcity" class="form-label" style="font-weight: 700; font-size: medium;">City</label>
+            <input type="text" class="form-control" id="custcity" name="custcity" placeholder="Enter your city">
+        </div>
+        <div class="col-md-4">
+            <label for="custdob" class="form-label" style="font-weight: 700; font-size: medium;">Date Of
+                Birth</label>
+            <input type="date" class="form-control" id="custdob" name="custdob" placeholder="EnterDOB">
+        </div>
+        <div class="col-md-2">
+            <label for="custgender" class="form-label" style="font-weight: 700; font-size: medium;">Gender</label>
+            <input type="text" class="form-control" id="custgender" name="custgender" placeholder="M/F">
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-outline-dark">Submit</button>
+            <a href="payment" class="btn btn-outline-dark">Proceed to Payment</a>
+        </div>
+    </form>
+
+</div>
+
+{% endblock body %}

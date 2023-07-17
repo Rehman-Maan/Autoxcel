@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq" crossorigin="anonymous">
+
+  <title> {% block title %}{% endblock title %} AutoXcel</title>
+</head>
+
+<body>
+    <style>body{background-color: grey;</style>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">AutoXcel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="vehicles">Vehicles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#reviews">Client Reviews</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  {% block body %}{% endblock body %}
+
+
+</body>
+
+<div class="card bg-dark text-white">
+  <div class="card-body">
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>About Comapany</h3>
+            <p>AutoXcel: Innovating automotive excellence. Exceptional vehicles, cutting-edge technology. Performance, safety, sustainability. Personalized service, comprehensive aftersales. Commitment to customer satisfaction. Eco-friendly manufacturing, alternative fuels. Join us on the journey of driving excellence and embracing the future of mobility.</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="social-media" padding-left: 0;">
+              <li style="margin-bottom: 10px;">
+                <div class="icon-box">
+                  <a href="https://www.facebook.com"><i class="fab fa-facebook fa-2x text-white"></i></a>
+                </div>
+              </li>
+              <li style="margin-bottom: 10px;">
+                <div class="icon-box">
+                  <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x text-white"></i></a>
+                </div>
+              </li>
+              <li>
+                <div class="icon-box">
+                  <a href="https://wa.me/1234567890"><i class="fab fa-whatsapp fa-2x text-white"></i></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+  </div>
+  </footer>
+</div>
+
+</html>

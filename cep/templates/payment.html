@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container my-5" my-5>
+
+    <form method="post" action="/payment" class="row g-3">
+        {% csrf_token %}
+        <div class="col-md-6" ;">
+            <label for="payid" class="form-label" style="font-weight: 700; font-size: medium;">Payment Id</label>
+            <input type="number" class="form-control" id="payid" name="payid">
+        </div>
+        <div class="col-md-6">
+            <label for="dateofpayment" class="form-label" style="font-weight: 700; font-size: medium;">Date of Payment</label>
+            <input type="date" class="form-control" id="dateofpayment" name="dateofpayment">
+        </div>
+        <div class="col-md-6" ;">
+            <label for="custid" class="form-label" style="font-weight: 700; font-size: medium;">Customer Id</label>
+            <input type="number" class="form-control" id="custid" name="custid">
+        </div>
+        <div class="col-md-6">
+            <label for="paymentstatus" class="form-label" style="font-weight: 700; font-size: medium;">Payment Status</label>
+            <input type="text" class="form-control" id="paymentstatus" name="paymentstatus">
+        </div>
+        <div class="col-md-6">
+            <label for="paymentmethod" class="form-label" style="font-weight: 700; font-size: medium;">Payment Method</label>
+            <input type="text" class="form-control" id="paymentmethod" name="paymentmethod">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
+</div>
+
+{% endblock body %}
